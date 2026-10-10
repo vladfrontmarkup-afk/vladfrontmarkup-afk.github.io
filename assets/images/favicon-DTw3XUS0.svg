@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="surface" x1="8" y1="4" x2="56" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10262d"/>
+      <stop offset="1" stop-color="#041012"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="12" y1="16" x2="52" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8fff2"/>
+      <stop offset=".5" stop-color="#49f4d2"/>
+      <stop offset="1" stop-color="#14c4b0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <path id="code" d="m22 23-10 9 10 9m20-18 10 9-10 9M36 17l-8 30"/>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#surface)"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="15.25" stroke="#49f4d2" stroke-opacity=".4" stroke-width="1.5"/>
+  <use href="#code" stroke="#49f4d2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".65" filter="url(#glow)"/>
+  <use href="#code" stroke="url(#neon)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
